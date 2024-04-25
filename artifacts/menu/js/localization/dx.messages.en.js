@@ -1,37 +1,37 @@
 /*!
 * DevExtreme (dx.messages.en.js)
 * Version: 24.1.1
-* Build date: Tue Apr 09 2024
+* Build date: Thu Apr 25 2024
 *
 * Copyright (c) 2012 - 2024 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
 */
 "use strict";
 
-! function(root, factory) {
-    if ("function" === typeof define && define.amd) {
-        define((function(require) {
-            factory(require("devextreme/localization"))
-        }))
-    } else if ("object" === typeof module && module.exports) {
-        factory(require("devextreme/localization"))
+(function(root, factory) {
+    if(typeof define === 'function' && define.amd) {
+        define(function(require) {
+            factory(require("devextreme/localization"));
+        });
+    } else if(typeof module === "object" && module.exports) {
+        factory(require("devextreme/localization"));
     } else {
-        factory(DevExpress.localization)
+        factory(DevExpress.localization);
     }
-}(0, (function(localization) {
+}(this, function(localization) {
     localization.loadMessages({
-        en: {
-            Yes: "Yes",
-            No: "No",
-            Cancel: "Cancel",
-            Close: "Close",
-            Clear: "Clear",
-            Done: "Done",
-            Loading: "Loading...",
-            Select: "Select...",
-            Search: "Search",
-            Back: "Back",
-            OK: "OK",
+        "en": {
+            "Yes": "Yes",
+            "No": "No",
+            "Cancel": "Cancel",
+            "Close": "Close",
+            "Clear": "Clear",
+            "Done": "Done",
+            "Loading": "Loading...",
+            "Select": "Select...",
+            "Search": "Search",
+            "Back": "Back",
+            "OK": "OK",
             "dxCollectionWidget-noDataText": "No data to display",
             "dxDropDownEditor-selectLabel": "Select",
             "validation-required": "Required",
@@ -221,8 +221,8 @@
             "dxPivotGrid-showFieldChooser": "Show Field Chooser",
             "dxPivotGrid-expandAll": "Expand All",
             "dxPivotGrid-collapseAll": "Collapse All",
-            "dxPivotGrid-sortColumnBySummary": 'Sort "{0}" by This Column',
-            "dxPivotGrid-sortRowBySummary": 'Sort "{0}" by This Row',
+            "dxPivotGrid-sortColumnBySummary": "Sort \"{0}\" by This Column",
+            "dxPivotGrid-sortRowBySummary": "Sort \"{0}\" by This Row",
             "dxPivotGrid-removeAllSorting": "Remove All Sorting",
             "dxPivotGrid-dataNotAvailable": "N/A",
             "dxPivotGrid-rowFields": "Row Fields",
@@ -696,5 +696,5 @@
             "dxMultiView-itemAriaLabel": "{0} of {1}",
             "dxSplitter-resizeHandleAriaLabel": "Split bar"
         }
-    })
+    });
 }));

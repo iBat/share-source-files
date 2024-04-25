@@ -1,37 +1,37 @@
 /*!
 * DevExtreme (dx.messages.nl.js)
 * Version: 24.1.1
-* Build date: Tue Apr 09 2024
+* Build date: Thu Apr 25 2024
 *
 * Copyright (c) 2012 - 2024 Developer Express Inc. ALL RIGHTS RESERVED
 * Read about DevExtreme licensing here: https://js.devexpress.com/Licensing/
 */
 "use strict";
 
-! function(root, factory) {
-    if ("function" === typeof define && define.amd) {
-        define((function(require) {
-            factory(require("devextreme/localization"))
-        }))
-    } else if ("object" === typeof module && module.exports) {
-        factory(require("devextreme/localization"))
+(function(root, factory) {
+    if(typeof define === 'function' && define.amd) {
+        define(function(require) {
+            factory(require("devextreme/localization"));
+        });
+    } else if(typeof module === "object" && module.exports) {
+        factory(require("devextreme/localization"));
     } else {
-        factory(DevExpress.localization)
+        factory(DevExpress.localization);
     }
-}(0, (function(localization) {
+}(this, function(localization) {
     localization.loadMessages({
-        nl: {
-            Yes: "Ja",
-            No: "Nee",
-            Cancel: "Annuleren",
-            Close: "Sluiten",
-            Clear: "Wissen",
-            Done: "Klaar",
-            Loading: "Laden...",
-            Select: "Kiezen...",
-            Search: "Zoeken",
-            Back: "Terug",
-            OK: "OK",
+        "nl": {
+            "Yes": "Ja",
+            "No": "Nee",
+            "Cancel": "Annuleren",
+            "Close": "Sluiten",
+            "Clear": "Wissen",
+            "Done": "Klaar",
+            "Loading": "Laden...",
+            "Select": "Kiezen...",
+            "Search": "Zoeken",
+            "Back": "Terug",
+            "OK": "OK",
             "dxCollectionWidget-noDataText": "Geen gegevens om te tonen",
             "dxDropDownEditor-selectLabel": "Kiezen",
             "validation-required": "Verplicht",
@@ -85,7 +85,7 @@
             "dxFileUploader-Mb": "MB",
             "dxFileUploader-Gb": "GB",
             "dxFileUploader-upload": "Uploaden",
-            "dxFileUploader-uploaded": "Ge\xfcpload",
+            "dxFileUploader-uploaded": "Geüpload",
             "dxFileUploader-readyToUpload": "Klaar om te uploaden",
             "dxFileUploader-uploadAbortedMessage": "Upload cancelled",
             "dxFileUploader-uploadFailedMessage": "Uploaden is mislukt",
@@ -221,8 +221,8 @@
             "dxPivotGrid-showFieldChooser": "Toon Veldenkiezer",
             "dxPivotGrid-expandAll": "Alle Uitklappen",
             "dxPivotGrid-collapseAll": "Alle Inklappen",
-            "dxPivotGrid-sortColumnBySummary": 'Sorteer "{0}" op Deze Kolom',
-            "dxPivotGrid-sortRowBySummary": 'Sorteer "{0}" op Deze Rij',
+            "dxPivotGrid-sortColumnBySummary": "Sorteer \"{0}\" op Deze Kolom",
+            "dxPivotGrid-sortRowBySummary": "Sorteer \"{0}\" op Deze Rij",
             "dxPivotGrid-removeAllSorting": "Verwijderen Alle Sorteringen",
             "dxPivotGrid-dataNotAvailable": "N/B",
             "dxPivotGrid-rowFields": "Rijvelden",
@@ -563,7 +563,7 @@
             "dxDiagram-commandAutoZoomByWidth": "Automatisch aan breedte aanpassen",
             "dxDiagram-commandSimpleView": "Eenvoudige weergave",
             "dxDiagram-commandCut": "Knippen",
-            "dxDiagram-commandCopy": "Kopi\xebren",
+            "dxDiagram-commandCopy": "Kopiëren",
             "dxDiagram-commandPaste": "Plakken",
             "dxDiagram-commandSelectAll": "Alles selecteren",
             "dxDiagram-commandDelete": "Verwijderen",
@@ -696,5 +696,5 @@
             "dxMultiView-itemAriaLabel": "{0} of {1}",
             "dxSplitter-resizeHandleAriaLabel": "Split bar"
         }
-    })
+    });
 }));
